@@ -1,0 +1,23 @@
+
+# 1. THE NUCLEAR OPTION
+* linguist-vendored
+
+# 2. EXCEÇÃO PARA C#
+*.cs linguist-vendored=false
+*.cs linguist-detectable=true
+
+# 3. TRATAMENTO DE ARQUIVOS QUE CONFUNDEM O GITHUB
+*.asset linguist-language=binary
+*.anim linguist-language=binary
+*.unity linguist-language=binary
+*.mat linguist-language=binary
+*.controller linguist-language=binary
+*.shader linguist-vendored
+*.shadergraph linguist-vendored
+*.cginc linguist-vendored
+*.hlsl linguist-vendored
+
+# 4. PASTAS DE TERCEIROS (REFORÇO)
+Assets/Imports/** linguist-vendored
+Assets/Plugins/** linguist-vendored
+ProjectSettings/* linguist-vendored
