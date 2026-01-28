@@ -48,6 +48,8 @@ namespace ithappy.Animals_FREE
 
         public void GatherInput()
         {
+            // O código original foi comentado para evitar erros com o novo Input System
+            /*
             m_Axis = new Vector2(Input.GetAxis(m_HorizontalAxis), Input.GetAxis(m_VerticalAxis));
             m_IsRun = Input.GetKey(m_RunKey);
             m_IsJump = Input.GetButton(m_JumpButton);
@@ -55,6 +57,15 @@ namespace ithappy.Animals_FREE
             m_Target = (m_Camera == null) ? Vector3.zero : m_Camera.Target;
             m_MouseDelta = new Vector2(Input.GetAxis(m_MouseX), Input.GetAxis(m_MouseY));
             m_Scroll = Input.GetAxis(m_MouseScroll);
+            */
+
+            // Implementação mínima para não quebrar outros scripts, mas sem usar o sistema antigo
+            m_Axis = Vector2.zero;
+            m_IsRun = false;
+            m_IsJump = false;
+            m_Target = (m_Camera == null) ? Vector3.zero : m_Camera.Target;
+            m_MouseDelta = Vector2.zero;
+            m_Scroll = 0f;
         }
 
         public void BindMover(CreatureMover mover)

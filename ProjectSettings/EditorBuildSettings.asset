@@ -11,15 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 65571a36c0debb2438c7bb94de3c928c
+  - enabled: 1
+    path: Assets/Scenes/Endgame.unity
+    guid: ea23845e911c5b843baa1462cc68980e
   - enabled: 0
     path: Assets/Scenes/Menu.unity
-    guid: e05f47dff9c43c7438f93e7a60455cba
-  - enabled: 0
-    path: Assets/Scenes/OpenWorld.unity
-    guid: d9c59618ac5504344aff27361801e80d
-  - enabled: 0
-    path: Assets/Scenes/GameOver.unity
-    guid: 4fb0d80c3f56d714080ecb9d35c65eec
+    guid: d8d798f523c92504382d12afbc3b555f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

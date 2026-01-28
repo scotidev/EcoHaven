@@ -393,9 +393,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b703d38cebd4f8b47b8f976c46e079de, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1413733669659421642}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b703d38cebd4f8b47b8f976c46e079de, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5423162089511596360}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b703d38cebd4f8b47b8f976c46e079de, type: 3}
       insertIndex: -1
@@ -411,23 +408,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b703d38cebd4f8b47b8f976c46e079de, type: 3}
   m_PrefabInstance: {fileID: 2453378464792771071}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1413733669659421642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3372438999529276590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cffe5c31ff71ac41a276a461a391d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  foot: {fileID: 8527931478440633930}
-  collisionLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  velocity: 7
 --- !u!143 &5423162089511596360
 CharacterController:
   m_ObjectHideFlags: 0

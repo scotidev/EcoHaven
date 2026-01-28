@@ -1,0 +1,25 @@
+# Unity - Ignorar binários e pastas pesadas
+Library/
+Temp/
+Obj/
+Build/
+Logs/
+UserSettings/
+
+# Pacotes (O Cline não precisa ler o código interno da Unity/Packages)
+Packages/
+ProjectSettings/
+
+# Arquivos de metadados (Ocupam muito espaço e o Cline não mexe neles)
+*.meta
+*.unity
+*.asset
+*.prefab
+*.mat
+*.anim
+
+# Arquivos de solução e projeto (O C# Dev Kit já cuida disso)
+*.sln
+*.csproj
+*.user
+*.suo

@@ -3,8 +3,17 @@ using UnityEngine.UI;
 
 public class Collectible : MonoBehaviour
 {
-    public static int totalDeColetaveis = 0;
+    public static int coletados = 0;
+    public static int totalNaCena = 0;
     public Text textoColetavel;
+
+    void Awake()
+    {
+        // Resetamos as variáveis estáticas para evitar acúmulo entre jogadas
+        coletados = 0;
+        // Contamos quantos coletáveis existem na cena no início
+        totalNaCena = FindObjectsByType<Collectible>(FindObjectsSortMode.None).Length;
+    }
 
     void Start()
     {
@@ -15,7 +24,7 @@ public class Collectible : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            totalDeColetaveis++;
+            coletados++;
             AtualizarTexto();
             Destroy(gameObject);
         }
@@ -25,7 +34,8 @@ public class Collectible : MonoBehaviour
     {
         if (textoColetavel != null)
         {
-            textoColetavel.text = totalDeColetaveis.ToString();
+            // Mostra o progresso: Ex: "3 / 10"
+            textoColetavel.text = coletados.ToString() + " / " + totalNaCena.ToString();
         }
     }
 }
