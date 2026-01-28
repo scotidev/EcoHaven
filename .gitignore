@@ -58,3 +58,5 @@ mono_crash.*
 # --- OS Generated ---
 .DS_Store
 Thumbs.db
+.aider*
+.env
