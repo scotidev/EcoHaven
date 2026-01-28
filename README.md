@@ -16,12 +16,36 @@ Interação com animais para resgate
 Sistema de entrega no abrigo
 Condições de vitória ao completar os resgates
 
+<table>
+    <thead>
+        <tr>
+            <th>Ação</th>
+            <th>Tecla</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Movimentação</strong></td>
+            <td>Setas / WASD </td>
+        </tr>
+        <tr>
+            <td><strong>Pausar Jogo</strong></td>
+            <td>Escape</td>
+        </tr>
+        <tr>
+            <td><strong>Chamar Menu</strong></td>
+            <td>M</td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+
 ### 👥 Equipe
 
 [Gabriel Scoti](https://scotidev.itch.io/)
-[Janara](https://www.linkedin.com/in/janara-sousa/)
+[Janara Sousa](https://www.linkedin.com/in/janara-sousa/)
 Jonathan
-[Marcelo](https://www.linkedin.com/in/marcelodamoreucha/)
+[Marcelo d Amore](https://www.linkedin.com/in/marcelodamoreucha/)
 [Pablo Cousino](https://www.linkedin.com/in/pablocousino1/)
 [Thaiane Cassetari](https://thaianecassetari.itch.io/)
 
