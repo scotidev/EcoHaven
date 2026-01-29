@@ -1,6 +1,6 @@
 # 🐾 Projeto: EcoHaven
 
-## Bootcamp Game Designer – SoulCode Academy 
+## Bootcamp Game Designer – SoulCode Academy
 
 Bem-vindo ao repositório do projeto desenvolvido durante o Bootcamp de Game Designer da SoulCode Academy.
 Aqui apresentamos o jogo criado por nossa equipe, com foco em aprendizado prático, lógica de programação e desenvolvimento de jogos.
@@ -42,12 +42,13 @@ Condições de vitória ao completar os resgates
 
 ### 👥 Equipe
 
-[Gabriel Scoti](https://scotidev.itch.io/)
+[Gabriel Scoti de Oliveira](https://scotidev.me)
 [Janara Sousa](https://www.linkedin.com/in/janara-sousa/)
-Jonathan
 [Marcelo d Amore](https://www.linkedin.com/in/marcelodamoreucha/)
 [Pablo Cousino](https://www.linkedin.com/in/pablocousino1/)
 [Thaiane Cassetari](https://thaianecassetari.itch.io/)
+[Jonathan Rocha](https://github.com/Jhon87)
 
 ### 📄 Licença
+
 Este projeto foi desenvolvido para fins educacionais durante o bootcamp.

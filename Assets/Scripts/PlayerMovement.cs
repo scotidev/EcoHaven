@@ -43,7 +43,6 @@ public class PlayerMovement : MonoBehaviour
         if (Keyboard.current.sKey.isPressed || Keyboard.current.downArrowKey.isPressed) vertical -= 1f;
 
         Vector3 movement = new Vector3(horizontal, 0f, vertical).normalized;
-        //movement = Vector3.ClampMagnitude(movement, 1f); normaliza movimento diagonal
 
         movement = myCamera.TransformDirection(movement);
         movement.y = 0;
@@ -62,13 +61,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump()
     {
-
-        if (Keyboard.current.spaceKey.wasPressedThisFrame && isGround)
-        {
-            jumpStrength = 5f;
-            animator.SetTrigger("Jump");
-        }
-
         if (jumpStrength > -9.81f)
         {
             jumpStrength += -9.81f * Time.deltaTime;

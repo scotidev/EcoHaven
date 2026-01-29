@@ -9,9 +9,7 @@ public class Collectible : MonoBehaviour
 
     void Awake()
     {
-        // Resetamos as variáveis estáticas para evitar acúmulo entre jogadas
         coletados = 0;
-        // Contamos quantos coletáveis existem na cena no início
         totalNaCena = FindObjectsByType<Collectible>(FindObjectsSortMode.None).Length;
     }
 
@@ -34,7 +32,6 @@ public class Collectible : MonoBehaviour
     {
         if (textoColetavel != null)
         {
-            // Mostra o progresso: Ex: "3 / 10"
             textoColetavel.text = coletados.ToString() + " / " + totalNaCena.ToString();
         }
     }

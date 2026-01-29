@@ -5544,6 +5544,7 @@ GameObject:
   - component: {fileID: 4535746553154542790}
   - component: {fileID: 3486373320065510458}
   - component: {fileID: 8873873260902444311}
+  - component: {fileID: 4894929505055746958}
   m_Layer: 7
   m_Name: pug
   m_TagString: Animal
@@ -5609,9 +5610,22 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.43614197, y: 0.42238867, z: 0.79060364}
+  m_Center: {x: 0.0052719116, y: 0.28880566, z: 0.033111572}
 --- !u!114 &8873873260902444311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7105132547998492349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f27a679dbb764f14fa7738f96ef546a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Collectible
+  textoColetavel: {fileID: 0}
+--- !u!114 &4894929505055746958
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
