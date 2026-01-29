@@ -905,7 +905,6 @@ GameObject:
   - component: {fileID: 6397291155531275066}
   - component: {fileID: 4358564621365722850}
   - component: {fileID: 547967885864272800}
-  - component: {fileID: -7760759364077393622}
   m_Layer: 7
   m_Name: Kitty_001
   m_TagString: Animal
@@ -974,19 +973,6 @@ BoxCollider:
   m_Size: {x: 0.35095215, y: 0.4915557, z: 0.6343994}
   m_Center: {x: 0.003829956, y: 0.25422215, z: -0.022888184}
 --- !u!114 &547967885864272800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6397291155531275063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f27a679dbb764f14fa7738f96ef546a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Collectible
-  textoColetavel: {fileID: 0}
---- !u!114 &-7760759364077393622
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
