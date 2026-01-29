@@ -2836,6 +2836,8 @@ GameObject:
   - component: {fileID: 1622930194220143941}
   - component: {fileID: -1449676448448011431}
   - component: {fileID: -821221795147141525}
+  - component: {fileID: 662379340637150234}
+  - component: {fileID: 2317730899064340886}
   m_Layer: 7
   m_Name: cur
   m_TagString: Animal
@@ -2916,6 +2918,47 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.39393494, y: 0.5363762, z: 0.78136736}
   m_Center: {x: 0.009965186, y: 0.23181173, z: 0.045729417}
+--- !u!114 &662379340637150234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3925358294965130716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd742fdd2fa18434cbc3f40b3f4be702, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AI
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentWaypointIndex: 0
+  speed: 2
+  stoppingDistance: 2
+--- !u!195 &2317730899064340886
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3925358294965130716}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &4025115074977585878
 GameObject:
   m_ObjectHideFlags: 0

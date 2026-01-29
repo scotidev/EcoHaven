@@ -2326,6 +2326,8 @@ GameObject:
   - component: {fileID: 7463337142469929755}
   - component: {fileID: -4521233731233923251}
   - component: {fileID: 6504560471957519565}
+  - component: {fileID: 2473245598606387270}
+  - component: {fileID: 3830595706516494017}
   m_Layer: 7
   m_Name: chihuahua
   m_TagString: Animal
@@ -2406,6 +2408,47 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.25556946, y: 0.32959166, z: 0.39271545}
   m_Center: {x: -0.0160141, y: 0.17748787, z: 0.043922424}
+--- !u!114 &2473245598606387270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2966845795971187337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd742fdd2fa18434cbc3f40b3f4be702, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AI
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentWaypointIndex: 0
+  speed: 2
+  stoppingDistance: 2
+--- !u!195 &3830595706516494017
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2966845795971187337}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &3000621442650369989
 GameObject:
   m_ObjectHideFlags: 0

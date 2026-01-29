@@ -1,86 +1,59 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI; // Necessário para acessar o NavMeshAgent
 
 public class AI : MonoBehaviour
 {
     [Header("Components")]
     public List<Transform> waypoints;
-    public LayerMask playerLayer;
-    private UnityEngine.AI.NavMeshAgent agent;
+    private NavMeshAgent agent;
     private Animator animator;
-    public GameObject hitbox;
 
     [Header("Variables")]
     public int currentWaypointIndex = 0;
     public float speed = 2f;
-    private bool isPlayerDetected = false;
-    private bool onRadious;
+    public float stoppingDistance = 2f; // Distância para trocar de waypoint
 
     void Start()
     {
-        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
-        agent.speed = speed;
+
+        if (agent != null)
+        {
+            agent.speed = speed;
+        }
+
+        // Define o primeiro destino logo ao iniciar
+        if (waypoints.Count > 0)
+        {
+            agent.SetDestination(waypoints[currentWaypointIndex].position);
+        }
     }
 
     void Update()
     {
-        if (!isPlayerDetected)
-        {
-            Patrol();
-        }
-        else
-        {
-            StopPatrol();
-            animator.SetTrigger("Attack");
-        }
+        Patrol();
     }
 
     private void Patrol()
     {
-        if (waypoints.Count == 0)
-        {
-            Debug.Log("Travado");
-            return;
-        }
+        // Se não houver waypoints, não faz nada
+        if (waypoints.Count == 0) return;
 
+        // Calcula a distância entre o animal e o waypoint atual
         float distanceToWaypoint = Vector3.Distance(waypoints[currentWaypointIndex].position, transform.position);
 
-        if (distanceToWaypoint <= 2)
+        // Se estiver perto o suficiente do ponto atual, muda para o próximo
+        if (distanceToWaypoint <= stoppingDistance)
         {
             currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Count;
+            agent.SetDestination(waypoints[currentWaypointIndex].position);
         }
 
-        agent.SetDestination(waypoints[currentWaypointIndex].position);
-        animator.SetBool("isWalking", true);
-        onRadious = false;
-    }
-
-    private void StopPatrol()
-    {
-        agent.isStopped = true;
-        animator.SetBool("isWalking", false);
-        onRadious = true;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log("Player Detectado");
-            isPlayerDetected = true;
-            hitbox.SetActive(true);
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log("Player saiu da colis�o");
-            isPlayerDetected = false;
-            agent.isStopped = false;
-            hitbox.SetActive(false);
-        }
+        // Controla a animação baseado na velocidade real do agente
+        // Se a velocidade for maior que 0.1, ele ativa o isWalking
+        bool isMoving = agent.velocity.magnitude > 0.1f;
+        //animator.SetBool("isWalking", isMoving);
     }
 }

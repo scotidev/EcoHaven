@@ -2970,6 +2970,8 @@ GameObject:
   - component: {fileID: 4291414336234631490}
   - component: {fileID: 7385641100319835056}
   - component: {fileID: 540256021502767675}
+  - component: {fileID: 3285588152728430149}
+  - component: {fileID: 8744923998697854763}
   m_Layer: 7
   m_Name: corgi
   m_TagString: Animal
@@ -3050,6 +3052,47 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.33717346, y: 0.5286154, z: 0.68211365}
   m_Center: {x: -0.0141067505, y: 0.23569229, z: 0.034690857}
+--- !u!114 &3285588152728430149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4333106941318723275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd742fdd2fa18434cbc3f40b3f4be702, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AI
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentWaypointIndex: 0
+  speed: 2
+  stoppingDistance: 2
+--- !u!195 &8744923998697854763
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4333106941318723275}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &4373477958497510491
 GameObject:
   m_ObjectHideFlags: 0
