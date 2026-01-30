@@ -49,9 +49,9 @@ Condições de vitória ao completar os resgates
 [Thaiane Cassetari](https://thaianecassetari.itch.io/)
 [Jonathan Rocha](https://github.com/Jhon87)
 
-### Jogo na Itch.io
+## Jogo no Itch.io
 
-[Ecohaven](https://scotidev.itch.io/ecohaven)
+[EcoHaven](https://scotidev.itch.io/ecohaven)
 
 ### 📄 Licença
 
