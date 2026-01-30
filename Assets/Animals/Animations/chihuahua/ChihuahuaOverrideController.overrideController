@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ChihuahuaOverrideController
+  m_Controller: {fileID: 9100000, guid: 85d145700f034624fa68c0abf8ec6467, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 13fbc88ad09e0d44bb32fd3e1548318c, type: 2}
+    m_OverrideClip: {fileID: -8722042315431808332, guid: 4f4179b83c6f2364299c06b052ef897b, type: 3}
