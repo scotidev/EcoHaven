@@ -14,10 +14,6 @@ public class RescueZone : MonoBehaviour
                     playerManager.VencerJogo();
                 }
             }
-            else
-            {
-                Debug.Log($"Ainda faltam PETs! Coletados: {Collectible.coletados} / {Collectible.totalNaCena}");
-            }
         }
     }
 }

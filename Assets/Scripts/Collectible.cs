@@ -22,9 +22,19 @@ public class Collectible : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            // Toca o som antes de destruir
+            AnimalSound animalSound = GetComponent<AnimalSound>();
+            if (animalSound != null)
+            {
+                animalSound.TocarSom();
+            }
+
             coletados++;
             AtualizarTexto();
-            Destroy(gameObject);
+
+            gameObject.GetComponent<Collider>().enabled = false;
+            foreach (Transform child in transform) child.gameObject.SetActive(false);
+            Destroy(gameObject, 2f);
         }
     }
 

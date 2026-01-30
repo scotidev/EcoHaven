@@ -26,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
     {
         Move();
         Jump();
-        // comentario
     }
 
     public void Move()

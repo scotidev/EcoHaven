@@ -9,14 +9,13 @@ public class MenuManager : MonoBehaviour
 
     public void ExitGame()
     {
-        // Application.Quit(); //forma otimizada de sair do jogo
 
 #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false; //para o modo de jogo no editor
+        UnityEditor.EditorApplication.isPlaying = false;
 #elif UNITY_WEBGL
             Application.OpenURL("about:blank"); 
 #else
-            Application.Quit(); //sai do jogo
+            Application.Quit(); 
 #endif
     }
 

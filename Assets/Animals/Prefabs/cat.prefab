@@ -905,6 +905,7 @@ GameObject:
   - component: {fileID: 6397291155531275066}
   - component: {fileID: 4358564621365722850}
   - component: {fileID: 547967885864272800}
+  - component: {fileID: 4654743677647181512}
   - component: {fileID: 3199918771030679995}
   - component: {fileID: 7888230043925252134}
   m_Layer: 7
@@ -987,6 +988,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Collectible
   textoColetavel: {fileID: 0}
+--- !u!114 &4654743677647181512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6397291155531275063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b0ae0fc7d25b214f9a4bfd2f9e50d85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimalSound
+  somDoAnimal: {fileID: 8300000, guid: b5df7acde0ae74944a5b20f233683cac, type: 3}
 --- !u!195 &3199918771030679995
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -996,7 +1010,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 6397291155531275063}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 1
   m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50

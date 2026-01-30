@@ -2,20 +2,28 @@ using UnityEngine;
 
 public class AnimalSound : MonoBehaviour
 {
+    [Header("Configurações de Áudio")]
+    [SerializeField] private AudioClip somDoAnimal;
     private AudioSource audioSource;
 
     void Awake()
     {
-        // Pega o componente AudioSource
         audioSource = GetComponent<AudioSource>();
+
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        audioSource.playOnAwake = false;
+        audioSource.spatialBlend = 1.0f;
     }
 
-    // M�todo p�blico para ser chamado pelo PlayerManager
-    public void TocarLatido()
+    public void TocarSom()
     {
-        if (audioSource != null && !audioSource.isPlaying)
+        if (audioSource != null && somDoAnimal != null)
         {
-            audioSource.Play();
+            audioSource.PlayOneShot(somDoAnimal);
         }
     }
 }
